@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>Nick Kelly - Projects</title>
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="styles/main.css"/>
+<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css"/>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+$(function() {
+	$(".run").fancybox({openEffect:'none', closeEffect:'none'});
+	$(".taskoid").fancybox({openEffect:'none', closeEffect:'none'});
+	$(".storylines").fancybox({openEffect:'none', closeEffect:'none'});
+	$(".artisan").fancybox({openEffect:'none', closeEffect:'none'});
+	$(".box").fancybox({openEffect:'none', closeEffect:'none'});
+});
+</script>
+</head>
+<body>
+<div id="main" class="persist-area">
+	<div id="headerb">
+		<div id="header">
+			<div class="centered">
+				<div id="name">
+					NICK KELLY
+				</div>
+				<ul id="nav">
+					<li><a href="index.htm">About</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="projects.htm">Projects</a></li>
+					<li><a href="contact.htm">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+		<h1>Projects</h1>
+		<a name="projects"></a>
+		<h2>Electrical Engineering</h2>
+		<h2>Web Development</h2>
+		<h3>Rundezvous</h3>
+		<h4>HTML/CSS, Javascript, PHP, mySQL, Facebook</h4>
+		<a title="Rundezvous Trail Page" class="run" rel="Rundezvous" href="images/projects/run1.png"><img class="project" src="images/projects/run1.png"/></a>
+		<a title="Rundezvous Pre-alpha" class="run" rel="Rundezvous" href="images/projects/run2.png"><img class="project" src="images/projects/run2.png"/></a>
+		<p>
+		After not really liking a lot of of Todo/Task application (or not having them do what I want), a friend and I decided to do the only logical thing--make our own. So, where planning on a bunch of features, mostly from a (engineering) student perspective. This will be a long project that will be worked on in increments. We're planning on starting on desktop apps (Windows, Linux and Mac) and a simple web app, then going to mobile apps (iPhone and Android).
+		</p>
+
+		<h3>Taskoid</h3>
+		<h4>HTML/CSS, Javascript, PHP, mySQL</h4>
+		<a title="Taskoid" class="taskoid" rel="Taskoid" href="images/projects/taskoid.png"><img class="project" src="images/projects/taskoid_s.png"/></a>
+		<p>
+		After not really liking a lot of of Todo/Task application (or not having them do what I want), a friend and I decided to do the only logical thing--make our own. So, where planning on a bunch of features, mostly from a (engineering) student perspective. This will be a long project that will be worked on in increments. We're planning on starting on desktop apps (Windows, Linux and Mac) and a simple web app, then going to mobile apps (iPhone and Android).
+		</p>
+
+		<h3>Storylines</h3>
+		<h4>HTML/CSS, Javascript, PHP, mySQL, Facebook</h4>
+		<a title="Storylines" class="storylines" rel="Storylines" href="images/projects/storylines2.png"><img class="project" src="images/projects/storylines2.png"/></a>
+		<a title="Storyline" class="storylines" rel="Storylines" href="images/projects/storylines3.png"><img class="project" src="images/projects/storylines3.png"/></a>
+		<p>
+		To fill the gap of rundezvous, I made a quick experiment in about a week. For this I utilized HTML5 (canvas, CSS3), Object-Oriented PHP, and AJAX. I also used a cool technique to make triangles with just CSS. Anyway, the project is called Storylines, and it's a collaborative story writing website/app. For the login, I just used Facebook purely (to save time). There were some interesting quirks with the idea, since only one person could edit a story at a time (plot contingency). To do this I used a technique called AJAX long polling, basically where the AJAX request online responds when something has changed. So basically, a person is put in a queue for editing the story, and has a certain amount of (idle) time to post a line/drawing. Some other features were drawings (using canvas, a colorpicker, jquery ui), branching stories (from a line), and reporting posts (fades away, and then hides). All in all it took about a week to complete.
+		</p>
+
+		<h2>Game Development</h2>
+		<h3>Artisan</h3>
+		<h4>iOS, Objective-C, OpenGL-ES</h4>
+		<a title="Artisan" class="artisan" rel="Artisan" href="images/projects/artisan1.jpg"><img class="project" src="images/projects/artisan1.jpg"/></a>
+		<a title="Artisan" class="artisan" rel="Artisan" href="images/projects/artisan2.jpg"><img class="project" src="images/projects/artisan2.jpg"/></a>
+		<a title="Artisan" class="artisan" rel="Artisan" href="images/projects/artisan3.jpg"><img class="project" src="images/projects/artisan3.jpg"/></a>
+		<a title="Artisan" class="artisan" rel="Artisan" href="images/projects/artisan4.jpg"><img class="project" src="images/projects/artisan4.jpg"/></a>
+		<a title="Artisan" class="artisan" rel="Artisan" href="images/projects/artisan5.jpg"><img class="project" src="images/projects/artisan5.jpg"/></a>
+		<p>
+		Artisan takes painting to the next level! It is a way to test your skills and share your creations with others to test their skills.
+		</p>
+		<p>
+		You can create a painting by choosing a stroke width, picking 5 painting colors and 1 background/base color (any color available). Once you are done you can upload it online for others to play or keep it on your iPod/iPhone.
+		</p>
+		<p>
+		Play online, local and career levels! Try to get records/highscores by recreating the painting as accurately as possible.
+		</p>
+
+		<h3>Boxarriffic</h3>
+		<h4>iOS, Objective-C</h4>
+		<a title="Boxarriffic" class="box" rel="Boxarriffic" href="images/projects/box1.jpg"><img class="project" src="images/projects/box1.jpg"/></a>
+		<a title="Boxarriffic" class="box" rel="Boxarriffic" href="images/projects/box2.jpg"><img class="project" src="images/projects/box2.jpg"/></a>
+		<a title="Boxarriffic" class="box" rel="Boxarriffic" href="images/projects/box3.jpg"><img class="project" src="images/projects/box3.jpg"/></a>
+		<a title="Boxarriffic" class="box" rel="Boxarriffic" href="images/projects/box4.jpg"><img class="project" src="images/projects/box4.jpg"/></a>
+		<a title="Boxarriffic" class="box" rel="Boxarriffic" href="images/projects/box5.jpg"><img class="project" src="images/projects/box5.jpg"/></a>
+		<p>
+		A reaction-type game in which you must click all the green boxes before the timer runs out, otherwise you lose a life. There are 54 levels total, each increasing in difficulty. And on each level you must go through 5 sets of highlighted boxes.
+		</p>
+		<p>
+		You get points based off of how quickly you click the boxes and retrying a level deducts 150 pts from your score. You can submit your score if it is a high score, though it will clear your game.
+		</p>
+
+		<h3>Tetris</h3>
+		<h4>Flash, Actionscript</h4>
+		<p>
+		This is my attempt of replicating the game: Tetris. I've always wanted to know how it worked or try to replicate it. It seems that while it seems simple, most of the work goes into performance. My version is completely based upon arrays and array transformations. I was eventually thinking of making an AI to go with the game, but there are other things that need to be added/changed.
+		</p>
+
+		<h3>Pop Rocks</h3>
+		<h4>Flash, Actionscript</h4>
+		<p>
+		Asteroids and enemies will be created to the beat of the music. Shoot asteroids for points and power-ups (firing for most power-ups is needed). When your ship spins out of control, turn the opposite way to counter-act it. You can use your shield to block damage it will regenerate over time. Blackholes will be created on large beats or changes in music, avoid them as well as the asteroids being drawn in. Meteor showers will send meteors moving in different directions. Meteors will damage asteriods/units but also your ship, unless shielded.
+		</p>
+	</div>
+</div>
+</body>
+</html
