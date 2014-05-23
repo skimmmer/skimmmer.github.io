@@ -54,6 +54,7 @@ body
 	top:0;
 	height:100px !important;
 	background-position:0 -300px !important;
+	box-shadow:0 0 20px 12px #FFF;
 }
 
 #header
@@ -203,6 +204,17 @@ img.project
 	height:100px;
 }
 
+.project-list
+{
+	margin-left:20px;
+	margin-bottom:20px;
+}
+
+.project-list > li
+{
+	margin-bottom:8px;
+}
+
 .large
 {
 	font-size:18pt;
@@ -214,4 +226,22 @@ img.project
 	border-bottom:dashed 1px #CCC;
 	padding-bottom:100px;
 	margin-bottom:100px;
+}
+
+.social > li
+{
+	list-style:none;
+	display:inline-block;
+	margin-right:20px;
+}
+
+.social > li a
+{
+	border:0 !important;
+}
+
+.social > li a:hover img
+{
+	border-radius:4px;
+	background:#DDD;
 }
