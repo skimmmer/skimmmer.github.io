@@ -19,20 +19,32 @@ $(function(){
 	$('#headerb').css('background-image', "url('" + back + "')");
 
 	// Sticky header
-	var shrinkHeader = 300;
-	$(window).scroll(function() {
-		var scroll = getCurrentScroll();
-		if ( scroll >= shrinkHeader ) {
-			$('#headerb').addClass('top-header');
-			$('#main').css('padding-top', 400);
-		}
-		else {
-			$('#headerb').removeClass('top-header');
-			$('#main').css('padding-top', 0);
-		}
+	var shrinkHeader = window.innerHeight * 0.4 - 100;
+
+	$(window).resize(function() {
+		shrinkHeader = window.innerHeight * 0.4 - 100;
+		scrollCheck();
 	});
+
+	$(window).scroll(function() {
+		scrollCheck();
+	});
+
 	function getCurrentScroll() {
 		var t = window.pageYOffset || document.documentElement.scrollTop;
 		return t;
+	}
+	function scrollCheck() {
+		var scroll = getCurrentScroll();
+		if ( scroll >= shrinkHeader ) {
+			$('#headerb').addClass('top-header');
+			$('#headerb').css('background-position', '0 -' + shrinkHeader + 'px');
+			$('#main').css('padding-top', window.innerHeight * 0.4);
+		}
+		else {
+			$('#headerb').removeClass('top-header');
+			$('#headerb').css('background-position', '0 0');
+			$('#main').css('padding-top', 0);
+		}
 	}
 });
