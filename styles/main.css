@@ -10,25 +10,25 @@
 @font-face 
 {
 	font-family: "VegurR";
-	src: url('../fonts/Vegur-R.otf') format("opentype");
+	src: url('/fonts/Vegur-R.otf') format("opentype");
 }
 
 @font-face
 {
 	font-family: "VegurM";
-	src: url('../fonts/Vegur-M.otf') format("opentype");
+	src: url('/fonts/Vegur-M.otf') format("opentype");
 }
 
 @font-face 
 {
 	font-family: "VegurL";
-	src: url('../fonts/Vegur-L.otf') format("opentype");
+	src: url('/fonts/Vegur-L.otf') format("opentype");
 }
 
 @font-face
 {
 	font-family: "VegurB";
-	src: url('../fonts/Vegur-B.otf') format("opentype");
+	src: url('/fonts/Vegur-B.otf') format("opentype");
 }
 
 body
@@ -243,4 +243,43 @@ img.project
 {
 	border-radius:4px;
 	background:#DDD;
+}
+
+/* == Posts == */
+.posts li {
+	list-style:none;
+}
+
+.posts li .title {
+	font-size:20pt;
+	border:none !important;
+	margin-bottom:5px;
+}
+
+.posts li .date {
+	font-size:14pt;
+	font-family:"VegurL";
+	color:#AAA;
+}
+.posts li .excerpt {
+	margin-top:5px;
+	font-size:12pt;
+	border-bottom:dashed 1px #CCC;
+}
+
+.posting {
+	font-size:14pt;
+	clear:both;
+}
+
+.posting-title {
+	float:left;
+}
+
+.large-date {
+	font-size:20pt;
+	margin:20px 0;
+	font-family:"VegurL";
+	color:#AAA;
+	float:right;
 }

@@ -1,15 +1,15 @@
 var backgrounds = [
-	"images/backgrounds/IMG_0177.JPG", 
-	"images/backgrounds/IMG_0197.JPG", 
-	"images/backgrounds/IMG_0278.JPG", 
-	"images/backgrounds/IMG_0298.JPG", 
-	"images/backgrounds/IMG_0304.JPG", 
-	"images/backgrounds/IMG_0313.JPG", 
-	"images/backgrounds/IMG_0376.JPG", 
-	"images/backgrounds/IMG_0392.JPG", 
-	"images/backgrounds/IMG_0405.JPG", 
-	"images/backgrounds/IMG_0409.JPG", 
-	"images/backgrounds/IMG_0433.JPG"
+	"/images/backgrounds/IMG_0177.JPG", 
+	"/images/backgrounds/IMG_0197.JPG", 
+	"/images/backgrounds/IMG_0278.JPG", 
+	"/images/backgrounds/IMG_0298.JPG", 
+	"/images/backgrounds/IMG_0304.JPG", 
+	"/images/backgrounds/IMG_0313.JPG", 
+	"/images/backgrounds/IMG_0376.JPG", 
+	"/images/backgrounds/IMG_0392.JPG", 
+	"/images/backgrounds/IMG_0405.JPG", 
+	"/images/backgrounds/IMG_0409.JPG", 
+	"/images/backgrounds/IMG_0433.JPG"
 ];
 
 $(function(){
@@ -47,4 +47,14 @@ $(function(){
 			$('#main').css('padding-top', 0);
 		}
 	}
+
+
+	var fb_box = [];
+	$('a[rel]').each(function() {
+		var cl = $(this).attr('class').split(' ')[0];
+		if (fb_box.indexOf(cl) < 0) {
+			$('.'+cl).fancybox({openEffect:'none', closeEffect:'none'});
+			fb_box.push(cl);
+		}
+	});
 });

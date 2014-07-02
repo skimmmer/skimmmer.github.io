@@ -1,0 +1,14 @@
+---
+title: Blog - Nick Kelly
+layout: default
+---
+<h1>Blog</h1>
+<ul class="posts">
+	{% for post in site.posts %}
+	<li>
+	<a class="title" href="{{ post.url }}">{{ post.title }}</a>
+	<div class="date">{{ post.date | date_to_string }}</div>
+	<div class="excerpt">{{ post.excerpt }}</div>
+	</li>
+	{% endfor %}
+</ul>
