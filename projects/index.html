@@ -5,6 +5,22 @@ layout: default
 <h1>Projects</h1>
 <a name="projects"></a>
 <h2>Electrical Engineering</h2>
+<h3>Node.js Asynchronous Compute-Bound Multithreading (UT EE382V)</h3>
+<h4>Javascript, Node.js, V8, C++</h4>
+<a href="/papers/dynamic.pdf"><img class="project" src="/images/projects/dynamic.png"/></a>
+<p>We propose a system for asynchronous multithread- ing in Node.js. By using annotations and extending V8 and Node.js, common asynchronous paradigms can be accelerated past the single-threaded model of Node.js. Our system extends the ECMA 5.1 directive syntax to allow for compute-bound annotations. Additionally, V8 is modified to allow Node.js to run a function in a separate V8 instance (Isolate). Upon completion of the compute-bound function, a callback is executed within the main event loop of Node.js. In our initial results, we recorded at least a 3x improvement (6x maximum) in speedup over a grouping of V8 and custom compute-bound benchmarks on a 4-core Intel Core-i5 system.
+</p>
+
+<h3>A Study of 3DIC Kogge-Stone Circuits (UT EE382N-14)</h3>
+<h4>Tcl, Perl, SPICE, Cadence</h4>
+<a href="/papers/hs_report.pdf"><img class="project" src="/images/projects/hs.png"/></a>
+<p>Component delays have traditionally been the focus for performance optimization of logic circuits. As component sizes and delays shrink, wire delays become more significant. Awareness and planning of component placement to optimize wire length then becomes more valuable. The addition of another dimension through die stacking creates more opportunities for shortening this length by shrinking the absolute distance between components. Through Surface Vias (TSVs) act as the electrical connection between die layers. We’ve found that TSVs have RC characteristics that create a communication delay that is less than the delay created by the length of wire needed to separate modules in a two dimensional space, meaning the incurred delay can be lessened by separating the modules by die layer. While TSVs have beneficial delay characteristics, they have an area requirement far more expensive than their wire counterparts, which may make them hard to place in the design, especially if many signals need to transfer layers. To demonstrate the effectiveness of this method we choose a Kogge­Stone adder because of it notoriety for having many long wires.</p>
+
+<h3>Highly Configurable Power Virus for GPGPUs (UT EE382M-15)</h3>
+<h4>CUDA C, Python, GPGPU-Sim</h4>
+<a href="/papers/perf.pdf"><img class="project" src="/images/projects/perf.png"/></a>
+<p>As GPUs are becoming common-place co- processors, methods for improving power usage without affecting performance are being analyzed. Currently, GPUs are transistor-dense devices, with many independent cores, yielding high power usage. One of the concerns shared by both CPUs and GPUs is how much power they will use when operating at peak performance and how to develop programs that will allow developers to test their system when at or near that point. For multicore microprocessors, tools have been created for developing power viruses that can stress test how well the system handles the additional power and heat. These tools allow the developer to create tailored power viruses by providing parameters of the system to test without knowing the fine grain details of the every functional unit in the processor that would be necessary to create the same kind of program by hand. However, this kind of tool has not been created for GPGPUs and existing multiprocessor capabilities for general purpose microprocessors cannot be used for this purpose. We created a tool to create power viruses for various GPU architectures using GPGPU-Sim-Wattch to simulate the virus and measure its power usage. In the end we were able to create power viruses for the GTX 480 and Quadro FX5600 that came close to or exceeded the thermal limits for these cards and discovered correlations between certain hardware features and the corresponding parameters to our code generator that get close to producing the best power viruses. We also found Plackett and Burman design to be very helpful for tuning the search space for our genetic algorithm and for discovering trends in our results.</p>
+
 <h3>GA Assisted SDF Scheduling for Energy-Aware Mapping of Heterogeneous Processors (UT EE382V)</h3>
 <h4>Python, YAML, C++</h4>
 <a href="/papers/EE382V_Final_Report.pdf"><img class="project" src="/images/projects/sdf.png"/></a>
