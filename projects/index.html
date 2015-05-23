@@ -5,6 +5,19 @@ layout: default
 <h1>Projects</h1>
 <a name="projects"></a>
 <h2>Electrical Engineering</h2>
+
+<h3>Realtime GPU Raytracing</h3>
+<h4>Graphics, CUDA C/C++, OpenGL</h4>
+<a href="/papers/raytracing.pdf"><img class="project" src="/images/projects/raytracing.png"/></a>
+<p>In this paper, we aim to explore current methods for realtime raytracing and attempt to elaborate upon them in order to produce a near realtime implementation. Additionally, while some prior work only implement partial features (e.g. only primary and shadow rays), we aim to support primary and all secondary (refraction, reflection, light/shadow) rays as well as arbitrary triangle meshes and textures. We decided to implement the final raytracer in CUDA due to the availability of NVIDIA hardware and their toolset.
+</p>
+
+<h3>Lightcuts and Illumination (UT CS384G)</h3>
+<h4>Graphics, OpenGL, C++</h4>
+<a href="/papers/cs384g.pdf"><img class="project" src="/images/projects/cs384g.png"/></a>
+<p>While acceleration structures such as k-d trees or bounding volume hierarchies greatly reduce the ray-object intersection complexity, every light source still needs to be assessed during the Phong shading. This can be troublesome for scene with large numbers of light sources, luminous objects, or global illumination. Lightcuts is a technique that seeks to reduce the overhead of iterating through a large number of light sources, by combining nearby light sources together. This of course comes with a certain amount of error, an error for which a threshold can be preset. This projects seeks to implement objects and methods which creates large amounts of light sources within the scene and demonstrate the acceleration in scene rendering with a large number of light sources using lightcuts.
+</p>
+
 <h3>Node.js Asynchronous Compute-Bound Multithreading (UT EE382V)</h3>
 <h4>Javascript, Node.js, V8, C++</h4>
 <a href="/papers/dynamic.pdf"><img class="project" src="/images/projects/dynamic.png"/></a>
