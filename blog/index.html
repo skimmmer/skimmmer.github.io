@@ -10,7 +10,7 @@ layout: default
 	<div class="date">
 		{{ post.date | date_to_string }}
 		{% if post.comments %}
-		<a href="{{ post.url }}#disqus_thread">0 Comments</a>
+		, <a href="{{ post.url }}#disqus_thread">0 Comments</a>
 		{% endif %}
 	</div>
 	<div class="excerpt">{{ post.excerpt }}</div>

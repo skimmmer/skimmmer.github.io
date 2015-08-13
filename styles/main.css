@@ -257,10 +257,20 @@ img.project
 }
 
 .posts li .date {
-	font-size:14pt;
-	font-family:"VegurL";
-	color:#AAA;
+	font-size:14pt !important;
+	font-family:"VegurL" !important;
+	color:#AAA !important;
 }
+
+.posts li .date a {
+	text-decoration:none;
+	border:0;
+}
+
+.posts li .date a:hover {
+	color:#555 !important;
+}
+
 .posts li .excerpt {
 	margin-top:5px;
 	font-size:12pt;
