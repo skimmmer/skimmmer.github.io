@@ -6,12 +6,13 @@ layout: default
 <ul class="posts">
 	{% for post in site.posts %}
 	<li>
-	{% if post.comments %}
-	<a class="title" href="{{ post.url }}#disqus_thread">{{ post.title }}</a>
-	{% else %}
 	<a class="title" href="{{ post.url }}">{{ post.title }}</a>
-	{% endif %}
-	<div class="date">{{ post.date | date_to_string }}</div>
+	<div class="date">
+		{{ post.date | date_to_string }}
+		{% if post.comments %}
+		<a href="{{ post.url }}#disqus_thread">0 Comments</a>
+		{% endif %}
+	</div>
 	<div class="excerpt">{{ post.excerpt }}</div>
 	</li>
 	{% endfor %}
