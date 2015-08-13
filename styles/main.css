@@ -265,9 +265,9 @@ img.project
 .posts li .date a {
 	text-decoration:none;
 	border:0;
-	font-size:14pt;
-	font-family:"VegurL";
-	color:#AAA;
+	font-size:14pt !important;
+	font-family:"VegurL" !important;
+	color:#AAA !important;
 }
 
 .posts li .date a:hover {
