@@ -203,6 +203,33 @@ img.project
 	height:100px;
 }
 
+.proj_tags {
+	font-size:14pt;
+	font-style:italic;
+	color:#888;
+	font-family:"VegurL";
+	margin-top:5px;
+	margin-bottom:10px;
+	display:block;
+}
+
+.proj_link {
+	list-style:none;
+	background:#AAA;
+	color:#FFF !important;
+	border:0;
+	font-style:normal;
+	font-size:12pt;
+	padding:4px 5px 2px 5px;
+	border-radius:2px;
+	margin-left:10px;
+	display:inline-block;
+}
+
+.proj_link:hover {
+	background: #333;
+}
+
 .project-list
 {
 	margin-left:20px;
@@ -287,7 +314,7 @@ img.project
 
 .tags li {
 	list-style:none;
-	background:#CCC;
+	background:#AAA;
 	color:#FFF;
 	padding:4px 5px 2px 5px;
 	border-radius:2px;

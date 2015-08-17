@@ -8,12 +8,16 @@ layout: default
 {% for category in site.categories reversed | sort: 'first' %}
 	{% assign posts = category[1] %}
 	{% assign proj_posts = posts | where:"layout","project" %}
+	{{ proj_posts | jsonify }}
 	{% if proj_posts.size > 0 %}
 		<h2>{{ category[0] | capitalize }}</h2>
 	{% else %}
 		{% continue %}
 	{% endif %}
 	{% for post in proj_posts %}
+		{% if post.layout != "project" %}
+			{% continue %}
+		{% endif %}
 		<div class="project">
 		{% if post.class %}
 			<h3>{{ post.title }} ({{ post.class }})</h3>
@@ -21,7 +25,11 @@ layout: default
 			<h3>{{ post.title }}</h3>
 		{% endif %}
 		{% if post.tags %}
-			<h4>{{ post.tags | array_to_sentence_string }}</h4>
+			<span class="proj_tags">{{ post.tags | array_to_sentence_string }}
+			{% for link in post.links %}
+				<a class="proj_link" href="{{ link[1] }}">{{ link[0] | capitalize }}</a>
+			{% endfor %}
+			</span>
 		{% endif %}
 		{% if post.pictures %}
 			{% for pic in post.pictures %}
@@ -29,9 +37,6 @@ layout: default
 			{% endfor %}
 		{% endif %}
 		{{ post.excerpt }}
-		{% for link in post.links %}
-			<a class="proj_link" href="{{ link[1] }}">{{ link[0] | capitalize }}</a>
-		{% endfor %}
 		</div>
 	{% endfor %}
 {% endfor %}
