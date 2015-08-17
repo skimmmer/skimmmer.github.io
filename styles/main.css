@@ -260,6 +260,7 @@ img.project
 	font-size:14pt;
 	font-family:"VegurL";
 	color:#AAA;
+	margin-top:5px;
 }
 
 .posts li .date a {
@@ -275,9 +276,23 @@ img.project
 }
 
 .posts li .excerpt {
-	margin-top:5px;
+	margin:15px 0;
 	font-size:12pt;
 	border-bottom:dashed 1px #CCC;
+}
+
+.tags {
+	margin:5px 0;
+}
+
+.tags li {
+	list-style:none;
+	background:#CCC;
+	color:#FFF;
+	padding:4px 5px 2px 5px;
+	border-radius:2px;
+	margin-right:5px;
+	display:inline-block;
 }
 
 .posting {
