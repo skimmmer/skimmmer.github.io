@@ -8,16 +8,12 @@ layout: default
 {% for category in site.categories reversed | sort: 'first' %}
 	{% assign posts = category[1] %}
 	{% assign proj_posts = posts | where:"layout","project" %}
-	{{ proj_posts | jsonify }}
 	{% if proj_posts.size > 0 %}
 		<h2>{{ category[0] | capitalize }}</h2>
 	{% else %}
 		{% continue %}
 	{% endif %}
 	{% for post in proj_posts %}
-		{% if post.layout != "project" %}
-			{% continue %}
-		{% endif %}
 		<div class="project">
 		{% if post.class %}
 			<h3>{{ post.title }} ({{ post.class }})</h3>
