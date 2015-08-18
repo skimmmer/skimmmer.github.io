@@ -5,7 +5,7 @@ layout: default
 <h1>Blog</h1>
 <ul class="posts">
 	{% for post in site.posts %}
-		{% if post.layout == "blog" %}
+		{% if post.type == "blog" %}
 			<li>
 			<a class="title" href="{{ post.url }}">{{ post.title }}</a>
 			<div class="date">

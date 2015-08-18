@@ -1,6 +1,7 @@
 ---
 title: Node.js Asynchronous Compute-Bound Multithreading
 layout: project
+type: project
 category: electrical engineering
 pictures: [dynamic.png]
 class: UT EE382V

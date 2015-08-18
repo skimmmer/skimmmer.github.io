@@ -1,6 +1,7 @@
 ---
 title: A Study of 3DIC Kogge-Stone Circuits
 layout: project
+type: project
 category: electrical engineering
 pictures: [hs.png]
 class: UT EE382N-14

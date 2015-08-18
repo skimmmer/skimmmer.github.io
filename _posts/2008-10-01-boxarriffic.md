@@ -1,6 +1,7 @@
 ---
 title: Boxarriffic
 layout: project
+type: project
 category: game development
 pictures: [box1.jpg, box2.jpg, box3.jpg, box4.jpg, box5.jpg]
 tags: [iOS, "Objective-C"]

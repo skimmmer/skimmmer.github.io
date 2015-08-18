@@ -1,6 +1,7 @@
 ---
 title: GA Assisted SDF Scheduling for Energy-Aware Mapping of Heterogeneous Processors
 layout: project
+type: project
 category: electrical engineering
 pictures: [sdf.png]
 class: UT EE382V

@@ -1,6 +1,7 @@
 ---
 title: Realtime GPU Raytracing
 layout: project
+type: project
 category: electrical engineering
 pictures: [raytracer.png]
 class: UT EE382N-20

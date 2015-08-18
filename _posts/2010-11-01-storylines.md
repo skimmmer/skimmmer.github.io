@@ -1,6 +1,7 @@
 ---
 title: Storylines
 layout: project
+type: project
 category: web development
 pictures: [storylines2.png, storylines3.png]
 tags: ["HTML/CSS", Javascript, PHP, MySQL, Facebook]

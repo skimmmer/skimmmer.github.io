@@ -1,6 +1,7 @@
 ---
 title: Lightcuts and Illumination
 layout: project
+type: project
 category: electrical engineering
 pictures: [cs384g.png]
 class: UT CS384G

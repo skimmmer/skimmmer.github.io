@@ -1,6 +1,7 @@
 ---
 title: Rundezvous
 layout: project
+type: project
 category: web development
 pictures: [run1.png, run2.png]
 tags: ["HTML/CSS", Javascript, PHP, MySQL, Facebook]

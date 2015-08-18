@@ -1,6 +1,7 @@
 ---
 title: Highly Configurable Power Virus for GPGPUs
 layout: project
+type: project
 category: electrical engineering
 pictures: [perf.png]
 class: UT EE382M-15

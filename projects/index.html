@@ -7,7 +7,7 @@ layout: default
 
 {% for category in site.categories reversed | sort: 'first' %}
 	{% assign posts = category[1] %}
-	{% assign proj_posts = posts | where:"layout","project" %}
+	{% assign proj_posts = posts | where:"type","project" %}
 	{% if proj_posts.size > 0 %}
 		<h2>{{ category[0] | capitalize }}</h2>
 	{% else %}
