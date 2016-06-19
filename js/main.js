@@ -1,15 +1,27 @@
 var backgrounds = [
-	"/images/backgrounds/IMG_0177.JPG", 
-	"/images/backgrounds/IMG_0197.JPG", 
-	"/images/backgrounds/IMG_0278.JPG", 
-	"/images/backgrounds/IMG_0298.JPG", 
-	"/images/backgrounds/IMG_0304.JPG", 
-	"/images/backgrounds/IMG_0313.JPG", 
-	"/images/backgrounds/IMG_0376.JPG", 
-	"/images/backgrounds/IMG_0392.JPG", 
-	"/images/backgrounds/IMG_0405.JPG", 
-	"/images/backgrounds/IMG_0409.JPG", 
-	"/images/backgrounds/IMG_0433.JPG"
+	"/images/backgrounds/IMG_0177.JPG",
+	"/images/backgrounds/IMG_0197.JPG",
+	"/images/backgrounds/IMG_0278.JPG",
+	"/images/backgrounds/IMG_0298.JPG",
+	"/images/backgrounds/IMG_0304.JPG",
+	"/images/backgrounds/IMG_0313.JPG",
+	"/images/backgrounds/IMG_0376.JPG",
+	"/images/backgrounds/IMG_0392.JPG",
+	"/images/backgrounds/IMG_0405.JPG",
+	"/images/backgrounds/IMG_0409.JPG",
+	"/images/backgrounds/IMG_0433.JPG",
+	"/images/backgrounds/IMG_1424.JPG",
+	"/images/backgrounds/IMG_1453.JPG",
+	"/images/backgrounds/IMG_1555.JPG",
+	"/images/backgrounds/IMG_1596.JPG",
+	"/images/backgrounds/IMG_1656.JPG",
+	"/images/backgrounds/IMG_1702.JPG",
+	"/images/backgrounds/IMG_1712.JPG",
+	"/images/backgrounds/IMG_1720.JPG",
+	"/images/backgrounds/IMG_1759.JPG",
+	"/images/backgrounds/IMG_1780.JPG",
+	"/images/backgrounds/IMG_1835.JPG",
+	"/images/backgrounds/IMG_20160608_194509.jpg"
 ];
 
 $(function(){
