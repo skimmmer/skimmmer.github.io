@@ -14,7 +14,6 @@ var backgrounds = [
 	"/images/backgrounds/IMG_1453.JPG",
 	"/images/backgrounds/IMG_1555.JPG",
 	"/images/backgrounds/IMG_1596.JPG",
-	"/images/backgrounds/IMG_1656.JPG",
 	"/images/backgrounds/IMG_1702.JPG",
 	"/images/backgrounds/IMG_1712.JPG",
 	"/images/backgrounds/IMG_1720.JPG",
