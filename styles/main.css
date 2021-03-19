@@ -114,12 +114,12 @@ body
 	text-decoration:none;
 	display:block;
 	float:left;
-	padding:5px 20px;
+	padding:0px 20px;
 }
 
 #nav > li a:hover
 {
-	text-shadow:0 0 1px #FFF;
+	text-shadow:0 0 2px #FFF;
 }
 
 .centered
@@ -245,7 +245,7 @@ img.project
 .large
 {
 	font-size:18pt;
-	line-height:24pt;
+	line-height:26pt;
 }
 
 ul.large
@@ -253,7 +253,7 @@ ul.large
 	margin-left:20px;
 	margin-bottom:24px;
 	font-size:16pt;
-	line-height:22pt;
+	line-height:26pt;
 }
 
 ul.large > li
