@@ -63,7 +63,7 @@ body
 	border-bottom:solid 1px #CCC;
 }
 
-#name 
+#name
 {
 	position:absolute;
 	bottom:0;
@@ -74,14 +74,6 @@ body
 	vertical-align:bottom;
 	text-shadow:0 0 1px #FFF;
 	text-decoration:none;
-}
-
-#nav
-{
-	display:inline-block;
-	position:absolute;
-	bottom:0;
-	right:0;
 }
 
 #nav > li
@@ -352,4 +344,101 @@ ul.large > li
 	font-family:"OpenSans-Light";
 	color:#AAA;
 	float:right;
+}
+
+@media screen {
+
+#name
+{
+	position:absolute;
+	bottom:0;
+	font-family:"OpenSans-Light";
+	font-size:48pt;
+	color:#FFF !important;
+	display:inline-block;
+	vertical-align:bottom;
+	text-shadow:0 0 1px #FFF;
+	text-decoration:none;
+}
+
+#nav
+{
+	display:inline-block;
+	position:absolute;
+	bottom:0;
+	right:0;
+}
+
+#nav > li:after, #nav > li:first-of-type:before
+{
+	width:1px;
+	height:35px;
+	background: linear-gradient(transparent, white);
+	display:block;
+	float:right;
+	content:'';
+}
+
+}
+
+@media handheld {
+
+#name 
+{
+	position:absolute;
+	bottom:64px;
+	left:24px;
+	font-family:"OpenSans-Light";
+	font-size:86pt;
+	color:#FFF !important;
+	display:inline-block;
+	vertical-align:bottom;
+	text-shadow:0 0 1px #FFF;
+	text-decoration:none;
+}
+
+#nav
+{
+	display:inline-block;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+
+#nav > li:first-of-type a
+{
+	padding:0px 20px;
+}
+
+#nav > li a
+{
+	color:#FFF;
+	font-family:"OpenSans-Light";
+	font-size:38pt;
+	text-decoration:none;
+	display:block;
+	float:left;
+	padding:0px 32px;
+}
+
+#nav > li:after
+{
+	width:3px;
+	height:54pt;
+	background: linear-gradient(transparent, white);
+	display:block;
+	float:right;
+	content:'';
+}
+
+#content
+{
+	width:960px;
+	margin:0 auto;
+	color:#212121;
+	font-family:"OpenSans-Regular";
+	font-size:12pt;
+	padding:20px 0;
+}
+
 }
