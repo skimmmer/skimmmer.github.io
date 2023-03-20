@@ -95,7 +95,7 @@ body
 
 #nav > li:first-of-type:before
 {
-	float:left;
+	float:left !important;
 }
 
 #nav > li a
