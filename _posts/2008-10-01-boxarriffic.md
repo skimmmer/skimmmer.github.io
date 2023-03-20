@@ -8,6 +8,6 @@ tags: [iOS, "Objective-C"]
 ---
 A reaction-type game in which you must click all the green boxes before the timer runs out,
 otherwise you lose a life. There are 54 levels total, each increasing in difficulty. And on each
-level you must go through 5 sets of highlighted boxes.  You get points based off of how quickly you
+level you must go through 5 sets of highlighted boxes. You get points based off of how quickly you
 click the boxes and retrying a level deducts 150 pts from your score. You can submit your score if
 it is a high score, though it will clear your game.
