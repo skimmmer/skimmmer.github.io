@@ -213,8 +213,8 @@ img.project
 	border:0;
 	font-style:normal;
 	font-size:12pt;
-	padding:4px 5px 2px 5px;
-	border-radius:2px;
+	padding:2px 5px 2px 5px;
+	border-radius:4px;
 	margin-left:10px;
 	display:inline-block;
 }
@@ -323,8 +323,8 @@ ul.large > li
 	list-style:none;
 	background:#AAA;
 	color:#FFF;
-	padding:4px 5px 2px 5px;
-	border-radius:2px;
+	padding:2px 5px 2px 5px;
+	border-radius:4px;
 	margin-right:5px;
 	display:inline-block;
 }
