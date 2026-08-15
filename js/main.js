@@ -23,7 +23,8 @@ $(function(){
 	$('#headerb').css('background-image', "url('" + back + "')");
 
 	// Sticky header
-	var headerHeight = window.innerWidth > 767 ? 100 : 120; 
+	var mobile = window.innerWidth > 767;
+	var headerHeight = mobile ? 100 : 120; 
 	var shrinkHeader = window.innerHeight * 0.4 - headerHeight;
 
 	$(window).resize(function() {
@@ -42,14 +43,18 @@ $(function(){
 	function scrollCheck() {
 		var scroll = getCurrentScroll();
 		if ( scroll >= shrinkHeader ) {
-			$('#headerb').addClass('top-header');
-			$('#headerb').css('background-position', '0 -' + shrinkHeader + 'px');
 			$('#main').css('padding-top', window.innerHeight * 0.4);
+			$('#headerb').addClass('top-header');
+			if (!mobile) {
+				$('#headerb').css('background-position', '0 -' + shrinkHeader + 'px');
+			}
 		}
 		else {
-			$('#headerb').removeClass('top-header');
-			$('#headerb').css('background-position', '0 0');
 			$('#main').css('padding-top', 0);
+			$('#headerb').removeClass('top-header');
+			if (!mobile) {
+				$('#headerb').css('background-position', '0 0');
+			}
 		}
 	}
 
