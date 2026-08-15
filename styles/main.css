@@ -397,6 +397,14 @@ ul.large > li
 	text-decoration:none;
 }
 
+.top-header
+{
+	position:fixed;
+	top:0;
+	height:120px !important;
+	box-shadow:0 0 20px 12px #FFF;
+}
+
 #nav
 {
 	display:inline-block;
@@ -444,6 +452,45 @@ ul.large > li
 .centered
 {
 	width:100%;
+}
+
+.large
+{
+	font-size:1em;
+	line-height:1.3em;
+}
+
+ul.large
+{
+	margin-left:24px;
+	margin-bottom:24px;
+	font-size:1em;
+	line-height:1.3em;
+}
+
+h1
+{
+	font-size:2.5em;
+	margin:20px 0;
+}
+
+h2
+{
+	font-size:2em;
+	margin:10px 0;
+	padding-top:10px;
+}
+
+h3
+{
+	font-size:1.5em;
+	margin-top:40px;
+}
+
+h4
+{
+	font-size:1.25em;
+	margin-bottom:10px;
 }
 
 }

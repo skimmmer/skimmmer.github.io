@@ -23,10 +23,11 @@ $(function(){
 	$('#headerb').css('background-image', "url('" + back + "')");
 
 	// Sticky header
-	var shrinkHeader = window.innerHeight * 0.4 - 100;
+	var headerHeight = window.innerWidth > 767 ? 100 : 120; 
+	var shrinkHeader = window.innerHeight * 0.4 - headerHeight;
 
 	$(window).resize(function() {
-		shrinkHeader = window.innerHeight * 0.4 - 100;
+		shrinkHeader = window.innerHeight * 0.4 - headerHeight;
 		scrollCheck();
 	});
 
