@@ -446,7 +446,7 @@ ul.large > li
 	color:#212121;
 	font-family:"OpenSans-Regular";
 	font-size:12pt;
-	padding:20px 0;
+	padding:20px 4px;
 }
 
 .centered
@@ -491,6 +491,32 @@ h4
 {
 	font-size:1.25em;
 	margin-bottom:10px;
+}
+
+.proj_tags {
+	font-size:1em;
+	margin-top:5px;
+	margin-bottom:10px;
+}
+
+.proj_link {
+	font-size:1em;
+	padding:2px 5px 2px 5px;
+	margin-left:10px;
+}
+
+.posts li .title {
+	font-size:1.75em;
+	margin-bottom:5px;
+}
+
+.posts li .date {
+	font-size:1em;
+
+}
+
+.posts li .date a {
+	font-size:1em !important;
 }
 
 }
