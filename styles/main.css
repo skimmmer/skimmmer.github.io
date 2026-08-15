@@ -386,10 +386,10 @@ ul.large > li
 #name 
 {
 	position:absolute;
-	bottom:64px;
-	left:24px;
+	bottom:0.5em;
+	left:0.1em;
 	font-family:"OpenSans-Light";
-	font-size:86pt;
+	font-size:4em;
 	color:#FFF !important;
 	display:inline-block;
 	vertical-align:bottom;
@@ -407,24 +407,24 @@ ul.large > li
 
 #nav > li:first-of-type a
 {
-	padding:0px 20px;
+	padding:0px 0.5em;
 }
 
 #nav > li a
 {
 	color:#FFF;
 	font-family:"OpenSans-Light";
-	font-size:38pt;
+	font-size:1.5em;
 	text-decoration:none;
 	display:block;
 	float:left;
-	padding:0px 32px;
+	padding:0px 0.5em;
 }
 
 #nav > li:after
 {
-	width:3px;
-	height:54pt;
+	width:1px;
+	height:2.25em;
 	background: linear-gradient(transparent, white);
 	display:block;
 	float:right;
