@@ -45,7 +45,7 @@ body
 	width:100%;
 	height:40%;
 	background: #FFF no-repeat 0px 0px;
-	background-size:100%;
+	background-size:cover;
 }
 
 .top-header
