@@ -146,6 +146,15 @@ body
 	border-bottom:solid 1px #333;
 }
 
+#footer
+{
+	color:#FFF;
+	background-color:#CCC;
+	margin-top: 20px;
+	padding: 20px 0;
+	text-align:center;
+}
+
 h1
 {
 	font-family:"OpenSans-SemiBold";
