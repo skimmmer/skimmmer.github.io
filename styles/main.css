@@ -184,7 +184,7 @@ h2
 	font-size:24pt;
 	margin:10px 0;
 	padding-top:10px;
-	border-top:dashed 1px #CCC;
+	border-top:solid 1px #EEE;
 }
 
 h3
@@ -217,7 +217,7 @@ img.project
 	border:solid 2px #CCC;
 	margin-right:20px;
 	margin-bottom:20px;
-	height:100px;
+	height:108px;
 }
 
 .proj_tags {
@@ -280,7 +280,7 @@ ul.large > li
 
 .page
 {
-	border-bottom:dashed 1px #CCC;
+	border-bottom:solid 1px #EEE;
 	padding-bottom:100px;
 	margin-bottom:100px;
 }
@@ -336,7 +336,7 @@ ul.large > li
 .posts li .excerpt {
 	margin:15px 0;
 	font-size:12pt;
-	border-bottom:dashed 1px #CCC;
+	border-bottom:solid 1px #EEE;
 }
 
 .tags {
@@ -503,7 +503,7 @@ h2
 {
 	font-size:2em;
 	margin:10px 0;
-	padding-top:10px;
+	padding-top:32px 0 10px 0;
 }
 
 h3
