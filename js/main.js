@@ -23,8 +23,8 @@ $(function(){
 	$('#headerb').css('background-image', "url('" + back + "')");
 
 	// Sticky header
-	var mobile = window.innerWidth > 767;
-	var headerHeight = mobile ? 100 : 120; 
+	var mobile = window.innerWidth < 767;
+	var headerHeight = mobile ? 120 : 100; 
 	var shrinkHeader = window.innerHeight * 0.4 - headerHeight;
 
 	$(window).resize(function() {
