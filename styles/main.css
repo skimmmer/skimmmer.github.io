@@ -33,11 +33,13 @@
 
 body
 {
+	background-color:#DDD;
 }
 
 #main
 {
 	background:#FFF;
+	padding-bottom:20px;
 }
 
 #headerb
@@ -150,7 +152,6 @@ body
 {
 	color:#FFF;
 	background-color:#DDD;
-	margin-top: 20px;
 	padding: 20px 4px;
 	text-align:center;
 	font-family:"OpenSans-Regular";
