@@ -153,6 +153,19 @@ body
 	margin-top: 20px;
 	padding: 20px 0;
 	text-align:center;
+	font-family:"OpenSans-Light";
+	font-size:12pt;
+}
+
+#copyright
+{
+	margin-bottom:5px;
+}
+
+#opinions
+{
+	font-size:10pt;
+	color:#EEE;
 }
 
 h1
