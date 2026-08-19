@@ -19,16 +19,16 @@ var backgrounds = [
 $(function(){
 	// Random background
 	var back = backgrounds[Math.floor(Math.random() * backgrounds.length)];
-	console.log(back);
 	$('#headerb').css('background-image', "url('" + back + "')");
 
 	// Sticky header
-	var mobile = window.innerWidth < 767;
-	var headerHeight = mobile ? 120 : 100; 
-	var shrinkHeader = window.innerHeight * 0.4 - headerHeight;
+	var mobile;
+	var headerHeight; 
+	var shrinkHeader;
+	adjust();
 
 	$(window).resize(function() {
-		shrinkHeader = window.innerHeight * 0.4 - headerHeight;
+		adjust();
 		scrollCheck();
 	});
 
@@ -36,6 +36,11 @@ $(function(){
 		scrollCheck();
 	});
 
+	function adjust() {
+		mobile = window.innerWidth < 767;
+		headerHeight = mobile ? 120 : 100; 
+		shrinkHeader = window.innerHeight * 0.4 - headerHeight;
+	}
 	function getCurrentScroll() {
 		var t = window.pageYOffset || document.documentElement.scrollTop;
 		return t;
@@ -45,16 +50,16 @@ $(function(){
 		if ( scroll >= shrinkHeader ) {
 			$('#main').css('padding-top', window.innerHeight * 0.4);
 			$('#headerb').addClass('top-header');
-			if (!mobile) {
+			if (mobile) {
+				$('#headerb').css('background-position', 'bottom');
+			} else {
 				$('#headerb').css('background-position', '0 -' + shrinkHeader + 'px');
 			}
 		}
 		else {
 			$('#main').css('padding-top', 0);
 			$('#headerb').removeClass('top-header');
-			if (!mobile) {
-				$('#headerb').css('background-position', '0 0');
-			}
+			$('#headerb').css('background-position', '0 0');
 		}
 	}
 

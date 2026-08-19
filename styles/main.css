@@ -151,7 +151,7 @@ body
 #footer
 {
 	color:#FFF;
-	background-color:#DDD;
+	background-color:#EEE;
 	padding: 20px 4px;
 	text-align:center;
 	font-family:"OpenSans-Regular";
@@ -167,7 +167,6 @@ body
 {
 	font-family:"OpenSans-Light";
 	font-size:10pt;
-	color:#EEE;
 }
 
 h1
